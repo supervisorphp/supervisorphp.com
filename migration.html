@@ -1,0 +1,42 @@
+---
+layout: page
+title: Migration
+---
+
+<section class="general">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>Why do I need to migrate?</h2>
+				<p>The Supervisor client was originally released under the <a href="https://github.com/indigophp">IndigoPHP</a> organization. Since then it went through several changes. It also became a lot more bigger, so the decision was made to move it under it's
+					own place. And SupervisorPHP was born.</p>
+			</div>
+			<div class="col-lg-12">
+				<h2>Which versions are affected?</h2>
+				<p>Version 3.0.0 has been just released. This is the first version under the SupervisorPHP name. However, version 3.0.0 is also available in the old package. While you are still able to use it, it is recommended to migrate to SupervisorPHP as the number
+					of changes and BC breaks would still make it necessary to do some migration from 2.x to 3.x.</p>
+			</div>
+			<div class="col-lg-12">
+				<h2>How can I migrate to the new package?</h2>
+				<p>Migration is easy:</p>
+				<ol>
+					<li>Install <strong>supervisorphp/supervisor</strong> from <a href="https://packagist.org/packages/supervisorphp/supervisor">Packagist</a> (and remove <strong>indigophp/supervisor</strong>).</li>
+					<li>Remove the <strong>Indigo</strong> part from namespaces everywhere (the main namespace is <strong>Supervisor</strong> now).</li>
+					<li>You are done!</li>
+				</ol>
+			</div>
+			<div class="col-lg-12">
+				<h2>What are the new package names?</h2>
+				<p>You can use the following package names instead of the old ones:</p>
+				<ul class="list-unstyled">
+					<li><strong>supervisorphp/supervisor</strong> instead of <strong>indigophp/supervisor</strong>
+					</li>
+					<li><strong>supervisorphp/configuration</strong> instead of <strong>indigophp/supervisor-configuration</strong>
+					</li>
+					<li><strong>supervisorphp/event</strong> instead of <strong>indigophp/supervisor-event</strong>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
