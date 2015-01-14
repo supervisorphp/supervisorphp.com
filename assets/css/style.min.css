@@ -8127,6 +8127,10 @@ footer {
 footer a {
   color: #f39c12;
 }
+footer a:hover,
+footer a:focus {
+  color: #f39c12;
+}
 .heading {
   background-color: #f39c12;
   padding-top: 100px;
