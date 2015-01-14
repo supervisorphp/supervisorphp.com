@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="<%= modernizrClass %>no-js" manifest="manifest.appcache">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SupervisorPHP</title>
+	<meta name="description" content="">
+	<link rel="author" href="humans.txt">
+
+	<link rel="stylesheet" href="<%= path.asset %>/css/style.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<!-- build:include header/icons.html --><!-- /build -->
+
+	<script src="<%= path.asset %>/js/lib/modernizr.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="<%= path.asset %>/js/lib/html5shiv.min.js"></script>
+		<script src="<%= path.asset %>/js/lib/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="https://github.com/supervisorphp"><i class="fa fa-github"></i> Source</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>

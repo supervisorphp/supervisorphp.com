@@ -1,0 +1,111 @@
+<!-- build:include layout/header.html --><!-- /build -->
+<section id="intro">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 logo"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Control your Supervisor from PHP</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="warning">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				Migrating from <strong>indigophp/supervisor</strong>? Click <a href="migration.html">here</a> to see migration guide.
+			</div>
+		</div>
+	</div>
+</section>
+<section id="features" class="general">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h1>Features</h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-2">
+				<ul>
+					<li>Easy to use</li>
+					<li>Uses XML-RPC API</li>
+					<li>HTTP library agnostic</li>
+					<li>Supports extensions</li>
+				</ul>
+			</div>
+			<div class="col-lg-4">
+				<ul>
+					<li>Provides configuration builder</li>
+					<li>Supports event listeners</li>
+					<li>Controls instances form CLI</li>
+					<li>Provides a web interface</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="about" class="general colored">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h1>About</h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-2">
+				<p>SupervisorPHP started as a simple XML-RPC client for Supervisor under the <a href="https://github.com/indigophp">IndigoPHP</a> organization back in 2013. Since then it evolved a lot from custom HTTP implementations to complex, HTTP library agnostic client.</p>
+			</div>
+			<div class="col-lg-4">
+				<p>Now it is much more than a simple project. It became a complete suite which helps you control your Supervisor.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="components" class="general">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h1>Components</h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h2>Supervisor client</h2>
+				<p>The main package. It provides a connection through Supervisor's XML-RPC API. Using third party extensions (like <a href="https://github.com/mnaberez/supervisor_twiddler">twiddler</a>).</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h2>Configuration</h2>
+				<p>This component is a fully featured configuration builder/parser/writer. Parse configuration from any sources (even remote ones thanks to <a href="http://flysystem.theplpleague.com">Flysystem</a>), build new configurations, and write them to any destinations. Properties are always validated to make sure Supervisor will run fine.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h2>Event</h2>
+				<p>Create Supervisor event listeners in PHP. Write your own handlers or use the provided ones.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h2>Console (WIP)</h2>
+				<p>Supervisor comes with an awesome console tool called <strong>supervisorctl</strong>. However it only supports managing one instance at a time. It also only lets you define one connection per configuration. Wouldn't it be awesome if you could run the same commands on multiple instances? For example restarting all workers on all servers? Or store all used instances in one configuration file? Well, the console component just does all these.</p>
+				<div class="alert alert-warning" role="alert"><strong>Note!</strong> <strong>supervisorctl</strong> is still the recommended and official console application. This is just a tool which makes some tasks easier. It is not recommended for administration.</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h2>Monitor (WIP)</h2>
+				<p>The default status page in supervisor let's you do all the basic tasks which is needed to maintain it. But in some cases it is not enough. Managing multiple Supervisor instances by multiple administrators can end up in chaos. The monitor component helps you arrange things. Supports adding multiple instances, authentication, logging. Everything you might need to control Supervisor.</p>
+				<div class="alert alert-warning" role="alert"><strong>Note!</strong> As in case of the console component this is also not a replacement of the official status page. However, you can use it with confidence for doing everyday tasks.</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- build:include layout/footer.html --><!-- /build -->

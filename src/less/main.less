@@ -1,0 +1,92 @@
+a:focus {
+	outline: none;
+}
+
+.offline {
+	padding: 105px 40px 0 40px;
+	text-align: center;
+}
+
+#intro {
+	background-color: @brand-success;
+	padding: 150px 0;
+	text-align: center;
+
+	.logo {
+		background-image: url(../img/logo.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 200px;
+
+		.no-svg & {
+			background-image: url(../img/logo_big.png);
+		}
+	}
+
+	h1 {
+		color: #fff;
+	}
+}
+
+#warning {
+	padding: 10px 0;
+	background-color: @brand-warning;
+
+	a {
+		color: @brand-danger;
+	}
+}
+
+section {
+	&.general {
+		font-size: 20px;
+		padding: 60px 0;
+
+		h1 {
+			font-size: 48px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		hr {
+			border-color: @brand-primary;
+			border-width: 5px;
+			max-width: 350px;
+		}
+	}
+
+	&.colored {
+		color: #fff;
+
+		hr {
+			border-color: #fff;
+		}
+	}
+}
+
+#about {
+	background-color: @brand-danger;
+}
+
+footer {
+	background-color: darken(@brand-primary, 5%);
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+
+	a {
+		color: @brand-warning;
+	}
+}
+
+.heading {
+	background-color: @brand-warning;
+	padding-top: 100px;
+	padding-bottom: 20px;
+
+	h1 {
+		color: @brand-primary;
+		text-transform: uppercase;
+	}
+}

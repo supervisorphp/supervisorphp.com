@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="<%= modernizrClass %>no-js" manifest="manifest.appcache">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SupervisorPHP Offline</title>
+	<meta name="description" content="">
+	<link rel="author" href="humans.txt">
+
+	<link rel="stylesheet" href="<%= path.asset %>/css/style.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+	<!-- build:include header/icons.html --><!-- /build -->
+
+	<script src="<%= path.asset %>/js/lib/modernizr.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="<%= path.asset %>/js/lib/html5shiv.min.js"></script>
+		<script src="<%= path.asset %>/js/lib/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"></a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="offline">
+			<h1>Unavailable</h1>
+			<p class="lead">The site is currently unavailable. Try again later.</p>
+		</div>
+	</div>
+<!-- build:include layout/footer.html --><!-- /build -->
